@@ -19,6 +19,8 @@ with open(data_path / "pizza_steak_sushi.zip", "wb") as f:
     request = requests.get("https://github.com/mrdbourke/pytorch-deep-learning/raw/main/data/pizza_steak_sushi.zip")
     print("Downloading pizza, steak, sushi data...")
     f.write(request.content)
+    
+    
 
 # Unzip pizza, steak, sushi data
 with zipfile.ZipFile(data_path / "pizza_steak_sushi.zip", "r") as zip_ref:
