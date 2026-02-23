@@ -7,6 +7,8 @@ from pathlib import Path
 data_path = Path("data/")
 image_path = data_path / "pizza_steak_sushi"
 
+
+
 # If the image folder doesn't exist, download it and prepare it... 
 if image_path.is_dir():
     print(f"{image_path} directory exists.")
